@@ -1,5 +1,5 @@
-name: wheel_slider
-description: Wheel Slider offers a lot of customisation and enables you to scroll around with a wheel-like appearance.
+name: wheel_slider_controllable
+description: Wheel Slider offers a lot of customisation and enables you to scroll around with a wheel-like appearance. This one has an exposed controller you can use.
 version: 1.2.1
 homepage: https://github.com/srinivasa-dev/wheel_slider
 

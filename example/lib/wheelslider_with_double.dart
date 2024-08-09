@@ -1,6 +1,6 @@
 import 'package:example/widgets/custom_box.dart';
 import 'package:flutter/material.dart';
-import 'package:wheel_slider/wheel_slider.dart';
+import 'package:wheel_slider_controllable/wheel_slider.dart';
 
 class WheelSliderWithDouble extends StatefulWidget {
   const WheelSliderWithDouble({Key? key}) : super(key: key);

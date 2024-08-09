@@ -1,7 +1,7 @@
 import 'package:example/wheelslider_with_double.dart';
 import 'package:example/widgets/custom_box.dart';
 import 'package:flutter/material.dart';
-import 'package:wheel_slider/wheel_slider.dart';
+import 'package:wheel_slider_controllable/wheel_slider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -83,11 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) =>
-                                const WheelSliderWithDouble()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const WheelSliderWithDouble()));
                   },
                   child: const Text('Examples with double value')),
               const SizedBox(
@@ -160,9 +156,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: Image.asset(
                               _countryList[index]['flag']!,
                               scale: _cCurrentValue == index ? null : 1.3,
-                              color: _cCurrentValue == index
-                                  ? Colors.transparent
-                                  : Colors.white,
+                              color: _cCurrentValue == index ? Colors.transparent : Colors.white,
                               colorBlendMode: BlendMode.color,
                             ),
                           )),

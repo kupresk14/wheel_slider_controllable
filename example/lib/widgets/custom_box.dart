@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:wheel_slider/wheel_slider.dart';
+import 'package:wheel_slider_controllable/wheel_slider.dart';
 
 class CustomBox extends StatelessWidget {
   final String title;
   final WheelSlider wheelSlider;
   final Text? valueText;
 
-  const CustomBox(
-      {Key? key,
-      required this.title,
-      required this.wheelSlider,
-      this.valueText})
-      : super(key: key);
+  const CustomBox({Key? key, required this.title, required this.wheelSlider, this.valueText}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
